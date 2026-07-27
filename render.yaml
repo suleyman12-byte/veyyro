@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: beauty-bot
+    runtime: docker
+    envVars:
+      - key: BOT_TOKEN
+        sync: false  # Задаётся вручную на Render
+    plan: free
+    autoDeploy: true
